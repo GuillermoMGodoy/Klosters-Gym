@@ -1,1 +1,1 @@
-# Klosters-Gym
+# KlostersGym

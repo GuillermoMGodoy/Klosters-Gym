@@ -1,0 +1,1095 @@
+
+.nav-item{
+    font-family: serif;
+   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, grey, black);
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+}
+.enlace-imagen {
+    display: block; /* Convierte el enlace en un bloque para que ocupe todo el ancho */
+}
+
+/* Establece un estilo para la imagen con la clase "imagen-responsive" */
+.imagen-responsive {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor padre */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+/* Estilos del contenedor */
+
+
+/* Estilos de cada item */
+.item {
+    border-radius: 30px;
+    background: black;
+    width: calc(33.33% - 20px); /* Divide en 3 columnas (ajusta según tus necesidades) */
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid goldenrod;
+    text-align: center;
+}
+/* Establece una anchura máxima para las imágenes dentro de los elementos <a> */
+.item img {
+    border-radius: 30px;
+    max-width: 100%; /* La imagen se ajustará al ancho del elemento padre */
+    height: auto; /* Mantendrá la proporción de aspecto de la imagen */
+}
+a {
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .item {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+    }
+}
+
+/* Estilos generales que se aplicarán a todos los dispositivos */
+.fa-whatsapp,
+#comprar {
+  color: green;
+}
+
+
+
+h1.Titulo {
+  font-family: serif;
+  background-color: goldenrod;
+  text-align: center;
+  color: black;
+}
+
+.carrito {
+  font-family: serif;
+  background-color: goldenrod;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.productos {
+  font-family: serif;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.producto {
+    font-family: serif;
+  background-color: goldenrod;
+  color: black;
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: 10px solid black;
+  text-align: center;
+}
+
+.agregar {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.agregar:hover {
+  background-color: darkgreen;
+}
+
+.imagen-producto {
+  color: #ddd;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .productos {
+    flex-direction: column; /* Cambia la dirección de los productos a una columna */
+    align-items: center; /* Centra los productos horizontalmente */
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+  }
+
+  .producto {
+    width: 100%; /* Ancho de los productos en dispositivos móviles */
+  }
+}
+
+/* Estilo para el contenedor .buscador */
+.buscador {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+/* Estilo para el campo de entrada #filtro */
+#filtro {
+    padding: 10px;
+    width: 100%; /* El campo de entrada ocupará todo el ancho disponible */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px; /* Agrega espacio entre el campo de entrada y el botón en pantallas pequeñas */
+}
+
+/* Estilo para el botón */
+button {
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    flex: 1; /* El botón ocupará todo el ancho disponible en pantallas pequeñas */
+}
+
+/* Estilo para el precio anterior */
+.precio-anterior {
+    color: red;
+    text-decoration: line-through;
+}
+
+
+.inicio img {
+    max-height: 100%;
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    
+}
+.linea {
+    border-radius: 3px;
+    background: black;
+    margin: 10px 0; /* Ajusta el espaciado entre la línea y las secciones */
+}
+
+.linea_imagen{
+    margin-top: -10px;
+    margin-bottom: 0;
+    background: darkgoldenrod;
+    width: 100%;
+    height: 10px;
+}
+.linea_imagen1{
+    margin-bottom: 0;
+    background: darkgoldenrod;
+    width: 100%;
+    height: 10px;
+}
+.titulo {
+    text-align: left;
+    background: black;
+    padding: 20px;
+}
+
+.foto_central {
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+
+.foto_central img {
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.gradiente-div {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+h2 {
+    font-family: serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 24px;
+    font-family: serif;
+}
+
+p {
+    font-family: serif;
+    font-size: 20px;
+}
+
+/* OFERTAS*/
+
+.ofertas {
+    border-radius: 20px;
+    text-align: center;
+    background-color: black; /* Cambiar el color de fondo a negro */
+    color: white; /* Cambiar el color del texto a blanco */
+    padding: 20px; /* Agregar un espaciado interno */
+}
+
+.conte {
+    margin: 5px;
+    border-radius: 40px;
+    background: black;
+    padding-right: 10px;
+     /* Cambiado el ancho y el margen */
+    box-shadow: 0 0 10px #f1f1f1;
+    justify-content: center;
+    display: inline-block; /* Para que las tarjetas aparezcan en línea */
+    vertical-align: top; /* Para alinearlas en la parte superior */
+    align-items: center;
+    align-content: center;
+    height: 80%;
+    width: 30%;    /* Para incluir el padding y el borde en el ancho total */
+}
+.conte .card {
+    border-radius: 40px;
+    margin: 20px;
+    margin-right: 30px;
+    align-content: center;
+    
+    margin-right: 60px;
+    width: 90%;
+    
+}
+
+.card img {
+    border-radius: 40px;
+   
+    display: block;
+    margin: 5px;
+    height: 10%;
+    width: 10%;
+}
+.alimentacion img{
+    height: 45vh;
+    width: 25vw;    
+}
+.ruti img{
+    height: 45vh;
+    width: 25vw;      
+}
+.alimentacion_rutina img{
+    height: 45vh;
+    width: 25vw;     
+}
+.suplementos img{
+    height: 45vh;
+    width: 25vw;    
+}
+.accesorios img{
+    height: 45vh;
+    width: 25vw;      
+}
+.indumentaria img{
+    height: 45vh;
+    width: 25vw;     
+}
+
+.conte .alimentacion{
+    background-color: goldenrod;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.conte  .ruti{
+    background-color: goldenrod;
+    align-items: center;
+    align-content: center;
+}
+.conte .alimentacion_rutina{
+    background-color: goldenrod;
+    align-items: center;
+    align-content: center;
+}
+.conte .suplementos{
+    background-color: goldenrod;
+    align-items: center;
+    align-content: center;
+}
+.conte .accesorios{
+    background-color: goldenrod;
+    align-items: center;
+    align-content: center;
+}
+.conte .indumentaria{
+    background-color: goldenrod;
+    align-items: center;
+    align-content: center;
+}
+
+.informacion{
+    height: 10vh;
+    width: 32vw;
+}
+.informacion h1{
+    width: 32vw;
+    height: 5vh;
+    font-family: serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    
+}
+.informacion p{
+    width: 20vw;
+    height: 12vh;
+    text-align: center;
+    font-family: serif;
+    font-size: .9em;
+    color: #555;
+}
+.precio {
+    width: 10%;
+    height: 10%;
+    margin-left: 10%;
+    font-family: serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Agregado para manejar filas de precios */
+}
+
+.box-precio {
+    width: 80px;
+}
+
+.precio1 {
+    color: red;
+    font-size: 1.5em;
+    max-width: 100%; /* Agregado para que el precio 1 no se salga del margen */
+}
+
+.precio2 {
+    color: white;
+    font-size: 2.0em;
+}
+.shoping{
+    font-size: 1.2em;
+    color: goldenrod;
+}
+
+
+
+footer {
+    width: 100%;
+    padding: 1px 0px;
+    background-size: cover;
+    background-color: black;
+}
+    footer .container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5px;
+}
+footer .box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+footer .box__footer.logo img {
+    width: 180px;
+}
+footer .box__footer h2 {
+    font-family: serif;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 500;
+}
+footer .box__footer a {
+    font-family: serif;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600px;
+    font-size: 15px;
+}
+footer .box__footer a:hover {
+    opacity: 0.8;
+}
+footer .box__footer a .fab {
+    font-size: 20px;
+}
+footer .box__copyright {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+footer .box__copyright p {
+    font-family: serif;
+    margin-top: 20px;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+footer .box__copyright hr {
+    border: none;
+    height: 2px;
+    background-color: #7a7a7a;
+}
+.pagina_cons {
+    color: white;
+    text-align: center;
+}
+
+.kuru {
+    display: block;
+    margin: 20px auto; /* Margen superior e inferior de 20px y centrar horizontalmente */
+}
+
+
+
+
+
+
+.background-image {
+    position: relative;
+    background-image: url('./img/qqss.png'); /* Cambiar 'ruta-de-la-imagen.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.title {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+.red-text {
+    color: #ff0000; /* Color rojo */
+}
+.subtitle {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10px; /* Ajustar este valor según sea necesario */
+}
+
+h2.ubicacion{
+    font-size: 50px;
+    color:white ;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* QUIENES SOMOS PAGINA*/
+.custom-section {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    margin: 20px auto;
+    width: 70%;
+}
+
+.custom-section-image {
+    max-width: 40%;
+    margin-left: 20px; /* Cambio de "margin-right" a "margin-left" */
+    border-radius: 8px;
+}
+
+.custom-section-text {
+    margin-left: 10px;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.imagen-texto-container {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    margin: 20px auto;
+    width: 70%;
+}
+
+.imagen-derecha {
+    max-width: 40%;
+    margin-right: 10px; /* Cambio de "margin-left" a "margin-right" */
+    border-radius: 8px;
+}
+
+.texto-izquierda {
+    flex-grow: 1;
+    text-align: justify;
+    margin-right: 10px;
+} 
+
+
+
+.ubicacion-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    margin: 20px auto;
+    width: 70%;
+}
+
+.ubicacion-image {
+    max-width: 40%;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.ubicacion-text {
+    color: white;
+    flex-grow: 1;
+    text-align: justify;
+    margin-left:  10px;
+}
+
+.ubicacion-title {
+    color: goldenrod;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* CSS RUTINAS */
+.h2r {
+    text-align: center; /* Centra el texto horizontalmente */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Añade un poco de espacio alrededor del texto */
+}
+.rutina {
+    border-radius: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: darkgoldenrod;
+    border: 10px solid white;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rutina h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rutina a {
+    display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
+    text-align: center; /* Centra el contenido horizontalmente */
+    text-decoration: none; /* Quita la decoración de enlace predeterminada */
+}
+
+.rutina img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.rutina img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Aplicar estilos específicos para pantallas pequeñas */
+    .conte {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .custom-section,
+    .imagen-texto-container,
+    .ubicacion-container {
+        flex-direction: column;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .custom-section-image,
+    .imagen-derecha,
+    .ubicacion-image {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .custom-section-text,
+    .texto-izquierda,
+    .ubicacion-text {
+        margin: 10px 0;
+    }
+
+    .ubicacion-title {
+        font-size: 30px;
+    }
+}
+/* NOVEDADES*/
+
+.slider {
+    position: relative;
+    width: 100%;
+  }
+  
+  .slider-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%; /* Cambia esto según tus necesidades */
+}
+
+  
+  .sliderr {
+    width: 100%;
+    height: auto;
+  }
+  
+  button.prev-slide,
+  button.next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  button.prev-slide {
+    left: 10px;
+  }
+  
+  button.next-slide {
+    right: 10px;
+  }
+  
+
+
+
+
+/* Estilos generales del slider */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* Agregamos posición relativa para que las flechas de navegación sean posicionadas correctamente */
+}
+
+.slider {
+    display: flex;
+    animation: desplazar 20s linear infinite;
+}
+
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+/* Animación de desplazamiento */
+@keyframes desplazar {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+/* Estilos para las imágenes dentro de los slides */
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para las flechas de navegación */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Ancho de las flechas */
+    height: 40px; /* Alto de las flechas */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo de las flechas */
+    color: #fff; /* Color del texto de las flechas */
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 24px; /* Tamaño del texto de las flechas */
+    z-index: 2;
+}
+
+.slider-nav-left {
+    left: 0;
+}
+
+.slider-nav-right {
+    right: 0;
+}
+
+
+/* BODYBUILDING */
+
+#home {
+    text-align: center;
+    background: linear-gradient(to right, grey, black);
+    position: relative; /* Añade esta propiedad */
+}
+
+#home img {
+    max-height: 50%;
+    max-width: 100%;
+    height: auto;
+    opacity: 1; /* Añade opacidad a la imagen */
+}
+
+/* Estilos para la sección de cómo entrenamos */
+#how-we-train {
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(to right, grey, black);
+}
+
+/* Estilos para la sección de instructores */
+#instructors {
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    background: linear-gradient(to right, grey, black);
+}
+
+.instructor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructor-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.instructor-item img {
+    border-radius: 100px;
+    background: darkgoldenrod;
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.instructor-item img:hover {
+    transform: scale(1.1);
+}
+/*RUTINAS*/
+
+/* Estilos para el título */
+.title {
+    color: goldenrod;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(3, 3, 3, 0.8); /* Sombral brillante blanca */
+}
+
+/* Estilos para la cuadrícula de videos */
+.video-grid {
+    background: black;
+    color: goldenrod;
+    text-shadow: 0 0 10px rgba(185, 100, 2, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-column {
+    width: calc(50% - 10px); /* Para dos columnas separadas por 20px de espacio */
+}
+
+/* Estilos específicos para los videos */
+.video-container {
+    background: black;
+    max-width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .video-column {
+        width: 100%; /* Cambiar a una columna para dispositivos móviles */
+    }
+}
+/*ALIMENTACIÓN*/
+#video-background {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+/* Estilos generales para el contenedor */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para el contenido de cada sección */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+/* Estilos para la imagen a la izquierda */
+.left-img {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+/* Estilos para la imagen a la derecha */
+.right-img {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 20px;
+}
+
+/* Estilos para el texto a la derecha */
+.right-text {
+    width: 50%;
+}
+
+/* Estilos para el texto a la izquierda */
+.left-text {
+    width: 50%;
+}
+
+
+
+
+/* Estilo para todas las imágenes */
+.footer-img {
+    width: 100%; /* Ocupar el ancho completo de su contenedor */
+    max-width: 100%; /* Asegurar que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantener la proporción original de la imagen */
+}
+
+/* Estilo para la imagen "gym" */
+.gym {
+    background: black;
+    display: block; /* Cambiar a display block para que el margen automático funcione */
+    width: 100%; /* Ocupar el ancho completo de su contenedor */
+    max-width: 100%; /* Asegurar que la imagen no exceda el ancho del contenedor */
+}
+
+/* SECCION EJERCIOS */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.muscle-categories {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.muscle-category {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    flex-basis: calc(20% - 10px);
+    text-align: center;
+}
+
+.muscle-category:hover {
+    background-color: #ddd;
+}
+
+.muscle-group {
+    display: none;
+}
+
+.muscle-group.active {
+    display: block;
+}
+
+.exercise {
+    margin: 10px 0;
+}
+
+.exercise img {
+    max-width: 100%;
+    height: auto;
+}
+
+.exercise-description {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+
+h2 {
+    margin-top: 10px;
+}
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 4500px; /* Ancho del carrusel en escritorio */
+    white-space: nowrap;
+    animation: scroll 18s linear infinite; /* Velocidad en escritorio */
+    position: relative;
+}
+.medal {
+    flex: 0 0 300px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 20px;
+    white-space: normal; /* Permite que el contenido se ajuste automáticamente */
+}
+
+/* Resto de tu CSS aquí */
+
+
+.medal img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Comienza desde 0 para evitar espacio vacío al inicio */
+    }
+    100% {
+        transform: translateX(-70%); /* Termina en -70% para evitar espacio vacío al final */
+    }
+}
+.saladetrofeos {
+    
+    color: black;
+    font-size: 30px; /* Tamaño de fuente para pantallas grandes */
+    text-align: center; /* Centra el texto en pantallas grandes */
+    background-color: goldenrod;
+}
+
+/* Media query para pantallas más pequeñas (por ejemplo, teléfonos móviles) */
+@media (max-width: 767px) {
+    .saladetrofeos {
+        font-size: 18px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+    }
+}
+/* Velocidad de desplazamiento en dispositivos móviles */
+@media (max-width: 767px) {
+    .carousel {
+        animation: scroll 80s linear infinite; /* Velocidad en dispositivos móviles */
+    }
+}
+/* Estilo CSS para achicar la imagen */
+img.gg {
+    width: 35px; /* Puedes ajustar este valor según tus necesidades */
+    height: auto; /* Para mantener la proporción original de la imagen */
+  }
+
+
+    /* Estilos para las secciones */
+    section {
+        font-size: 2rem;
+        text-align: center;
+        background-color: goldenrod; /* Color de fondo para cada sección */
+        border-radius: 5px; /* Bordes redondeados para las secciones */
+      }
+  
+      .macrostit {
+        background-color: wheat;
+        font-size: 30px; /* Tamaño de fuente para títulos principales */
+      }
+  
+  
+      .imagen {
+        max-width: 100%; /* Asegurar que las imágenes no se desborden del contenedor */
+        display: block; /* Eliminar el espacio adicional debajo de las imágenes */
+        margin: 0 auto; /* Centrar las imágenes horizontalmente */
+      }
