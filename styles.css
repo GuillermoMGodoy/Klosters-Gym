@@ -669,6 +669,12 @@ h2.ubicacion{
         font-size: 30px;
     }
 }
+
+#main {
+    border-bottom: 10px solid goldenrod;
+    padding-bottom: 0; /* Elimina el espacio adicional en la parte inferior del elemento main */
+  }
+  
 /* NOVEDADES*/
 
 .slider {
@@ -1012,7 +1018,7 @@ h2 {
     overflow: hidden;
 }
 
-.carousel {
+.carousell {
     display: flex;
     overflow: hidden;
     width: 4500px; /* Ancho del carrusel en escritorio */
@@ -1063,7 +1069,7 @@ h2 {
 }
 /* Velocidad de desplazamiento en dispositivos móviles */
 @media (max-width: 767px) {
-    .carousel {
+    .carousell {
         animation: scroll 80s linear infinite; /* Velocidad en dispositivos móviles */
     }
 }
