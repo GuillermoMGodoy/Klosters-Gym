@@ -69,12 +69,37 @@ a {
 
 
 
-h1.Titulo {
-  font-family: serif;
-  background-color: goldenrod;
-  text-align: center;
-  color: black;
+.Titulo {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    animation: cambioColor 5s infinite; /* Cambia de color cada 5 segundos */
 }
+
+@keyframes cambioColor {
+    0% {
+        color: #ff00ff; /* Rosa */
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; /* Resplandor */
+    }
+    25% {
+        color: #00ffcc; /* Verde azulado */
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc; /* Resplandor */
+    }
+    50% {
+        color: #ffcc00; /* Amarillo anaranjado */
+        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00; /* Resplandor */
+    }
+    75% {
+        color: #cc00ff; /* Púrpura */
+        text-shadow: 0 0 10px #cc00ff, 0 0 20px #cc00ff, 0 0 30px #cc00ff; /* Resplandor */
+    }
+    100% {
+        color: #ff0000; /* Rojo */
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; /* Resplandor */
+    }
+}
+
+
 
 .carrito {
   font-family: serif;
@@ -176,25 +201,7 @@ button {
     max-width: 100%; /* La imagen no excederá el ancho del contenedor */
     
 }
-.linea {
-    border-radius: 3px;
-    background: black;
-    margin: 10px 0; /* Ajusta el espaciado entre la línea y las secciones */
-}
 
-.linea_imagen{
-    margin-top: -10px;
-    margin-bottom: 0;
-    background: darkgoldenrod;
-    width: 100%;
-    height: 10px;
-}
-.linea_imagen1{
-    margin-bottom: 0;
-    background: darkgoldenrod;
-    width: 100%;
-    height: 10px;
-}
 .titulo {
     text-align: left;
     background: black;
@@ -957,57 +964,34 @@ video {
 }
 
 /* SECCION EJERCIOS */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-h1 {
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-.muscle-categories {
+.button-container {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
-.muscle-category {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.category-button {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    border: none;
     cursor: pointer;
-    flex-basis: calc(20% - 10px);
+    font-size: 16px;
+    margin: 5px;
+}
+
+.content-container {
+    display: none;
+    padding: 20px;
     text-align: center;
 }
 
-.muscle-category:hover {
-    background-color: #ddd;
-}
-
-.muscle-group {
-    display: none;
-}
-
-.muscle-group.active {
-    display: block;
-}
-
-.exercise {
-    margin: 10px 0;
-}
-
-.exercise img {
+.category-content img {
     max-width: 100%;
     height: auto;
-}
-
-.exercise-description {
-    margin-top: 5px;
-    font-style: italic;
+    margin-bottom: 10px;
 }
 
 
@@ -1099,3 +1083,5 @@ img.gg {
         display: block; /* Eliminar el espacio adicional debajo de las imágenes */
         margin: 0 auto; /* Centrar las imágenes horizontalmente */
       }
+
+ 

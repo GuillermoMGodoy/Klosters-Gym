@@ -23,10 +23,10 @@ function agregarAlCarrito(event) {
     
 
     // Verificar si los atributos existen antes de convertirlos a números
-    const precioPorMes = precioPorMesAttr ? parseFloat(precioPorMesAttr) : 6000;
-    const precioPorTrimestre = precioPorTrimestreAttr ? parseFloat(precioPorTrimestreAttr) : 15000;
+    const precioPorMes = precioPorMesAttr ? parseFloat(precioPorMesAttr) : 5000;
+    const precioPorTrimestre = precioPorTrimestreAttr ? parseFloat(precioPorTrimestreAttr) : 12000;
     const precioPorMesEntreyDieta = precioPorMesAttr ? parseFloat(precioPorMesAttrEntreyDieta) : 8000;
-    const precioPorTrimestreEntreyDieta = precioPorTrimestreAttr ? parseFloat(precioPorTrimestreAttrEntreyDieta) : 20000;
+    const precioPorTrimestreEntreyDieta = precioPorTrimestreAttr ? parseFloat(precioPorTrimestreAttrEntreyDieta) : 21000;
 
     // Calcular el precio del producto según la duración
     const precioProducto = duracion === 'mes' ? precioPorMes : duracion === 'trimestre' ? precioPorTrimestre : precio;
@@ -259,3 +259,14 @@ prevBtn.addEventListener("click", prevSlide);
 
 // Cambio automático de slide cada 4 segundos
 setInterval(nextSlide, 4000);
+
+function showContent(category) {
+    // Oculta todos los elementos con clase 'category-content'
+    var contents = document.querySelectorAll('.category-content');
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = 'none';
+    }
+
+    // Muestra el elemento con el ID correspondiente a la categoría seleccionada
+    document.getElementById(category).style.display = 'block';
+}

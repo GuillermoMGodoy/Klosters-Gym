@@ -52,60 +52,70 @@
         </div>
     </nav>
     </header>
-    <div class="container">
-        <div class="muscle-categories">
-            <div class="muscle-category" onclick="showMuscleGroup('pecho')">Pecho</div>
-            <div class="muscle-category" onclick="showMuscleGroup('espalda')">Espalda</div>
-            <div class="muscle-category" onclick="showMuscleGroup('piernas')">Piernas</div>
-            <div class="muscle-category" onclick="showMuscleGroup('hombros')">Hombros</div>
-            <div class="muscle-category" onclick="showMuscleGroup('brazos')">Brazos</div>
-        </div>
 
-        <div class="muscle-group" id="pecho">
-            <h2>Pecho</h2>
-            <ul>
-                <li class="exercise">
-                    <img src="ruta_de_la_imagen.jpg" alt="Press de banca">
-                    <p class="exercise-description">Ejercicio: Press de banca</p>
-                </li>
-                <!-- Agrega más ejercicios para el pecho aquí -->
-                <li class="exercise">
-                    <img src="ruta_de_la_imagen.jpg" alt="Press de banca">
-                    <p class="exercise-description">Ejercicio: Press de banca</p>
-                </li>
-            </ul>
+    
+    <div class="button-container">
+        <button class="category-button" onclick="showContent('pecho')">Pecho</button>
+        <button class="category-button" onclick="showContent('espalda')">Espalda</button>
+        <button class="category-button" onclick="showContent('brazos')">Brazos</button>
+        <button class="category-button" onclick="showContent('piernas')">Piernas</button>
+        <button class="category-button" onclick="showContent('abdomen')">Abdomen</button>
+    </div>
+    
+    <div id="pecho" class="content-container category-content">
+        <h2>Pecho</h2>
+        <div class="content-item">
+            <img src="imagen_pecho_1.jpg" alt="Pecho 1">
+            <p>Descripción de la categoría pecho.</p>
         </div>
-
-        <div class="muscle-group" id="espalda">
-            <h2>Espalda</h2>
-            <ul>
-                <li class="exercise">
-                    <img src="ruta_de_la_imagen.jpg" alt="Dominadas">
-                    <p class="exercise-description">Ejercicio: Dominadas</p>
-                </li>
-                <!-- Agrega más ejercicios para la espalda aquí -->
-                <li class="exercise">
-                    <img src="ruta_de_la_imagen.jpg" alt="Dominadas">
-                    <p class="exercise-description">Ejercicio: Dominadas</p>
-                </li>
-            </ul>
-        </div>
-        <!-- Repite el mismo patrón para los otros grupos musculares -->
-        <div class="muscle-group" id="piernas">
-            <h2>Espalda</h2>
-            <ul>
-                <li class="exercise">
-                    <img src="ruta_de_la_imagen.jpg" alt="Dominadas">
-                    <p class="exercise-description">Ejercicio: Sentadillas</p>
-                </li>
-                <!-- Agrega más ejercicios para la espalda aquí -->
-                <li class="exercise">
-                    <img src="ruta_de_la_imagen.jpg" alt="Dominadas">
-                    <p class="exercise-description">Ejercicio: Peso muerto</p>
-                </li>
-            </ul>
+        <div class="content-item">
+            <img src="imagen_pecho_2.jpg" alt="Pecho 2">
+            <p>Descripción de la categoría pecho.</p>
         </div>
     </div>
+    
+    <!-- Contenido adicional para la categoría "Pecho" -->
+    <div id="pecho-extra" class="content-container category-content">
+        <h2>Pecho (Extra)</h2>
+        <div class="content-item">
+            <img src="imagen_pecho_extra_1.jpg" alt="Pecho Extra 1">
+            <img src="imagen_pecho_extra_1.jpg" alt="Pecho Extra 1">
+            <p>Descripción adicional de la categoría pecho.</p>
+        </div>
+        <div class="content-item">
+            <img src="imagen_pecho_extra_2.jpg" alt="Pecho Extra 2">
+            <img src="imagen_pecho_extra_2.jpg" alt="Pecho Extra 2">
+            <p>Descripción adicional de la categoría pecho.</p>
+        </div>
+    </div>
+
+<div id="espalda" class="content-container category-content">
+    <h2>Espalda</h2>
+    <img src="imagen_espalda_1.jpg" alt="Espalda 1">
+    <img src="imagen_espalda_2.jpg" alt="Espalda 2">
+    <p>Descripción de la categoría espalda.</p>
+</div>
+
+<div id="brazos" class="content-container category-content">
+    <h2>Brazos</h2>
+    <img src="imagen_brazos_1.jpg" alt="Brazos 1">
+    <img src="imagen_brazos_2.jpg" alt="Brazos 2">
+    <p>Descripción de la categoría brazos.</p>
+</div>
+
+<div id="piernas" class="content-container category-content">
+    <h2>Piernas</h2>
+    <img src="imagen_piernas_1.jpg" alt="Piernas 1">
+    <img src="imagen_piernas_2.jpg" alt="Piernas 2">
+    <p>Descripción de la categoría piernas.</p>
+</div>
+
+<div id="abdomen" class="content-container category-content">
+    <h2>Abdomen</h2>
+    <img src="imagen_abdomen_1.jpg" alt="Abdomen 1">
+    <img src="imagen_abdomen_2.jpg" alt="Abdomen 2">
+    <p>Descripción de la categoría abdomen.</p>
+</div>
 
     <footer>
                 <div class="container__footer">
