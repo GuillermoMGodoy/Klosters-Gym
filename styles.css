@@ -1084,4 +1084,48 @@ img.gg {
         margin: 0 auto; /* Centrar las imágenes horizontalmente */
       }
 
- 
+ /* PRELOADER */
+
+        /* Estilo específico para el preloader */
+        .loading .preloader-wrapper {
+            display: flex;
+        }
+
+        .preloader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            display: none; /* Ocultar inicialmente */
+        }
+
+        .preloader {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mancuerna-img {
+            width: 100px; /* Ajusta el ancho según tus necesidades */
+            height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+            /* Otros estilos que desees aplicar */
+            animation: logoAnimation 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes logoAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(2.1);
+            }
+        }

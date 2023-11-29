@@ -10,6 +10,23 @@
     <title>Kloster´s Gym</title>
 </head>
 <body>
+    <body class="loading">
+        <div class="preloader-wrapper">
+            <div class="preloader">
+                <!-- Reemplaza la mancuerna con una imagen -->
+                <img src="./img/Logo Blanco.png" alt="Logo" class="mancuerna-img">
+            </div>
+        </div>
+        <!-- ... Otro contenido ... -->
+    
+        <script>
+            // Simula un tiempo de carga (puedes quitar esto en producción)
+            setTimeout(function() {
+                document.body.classList.remove('loading');
+                document.querySelector('.preloader-wrapper').style.display = 'none';
+            }, 3000); // Tiempo en milisegundos (3 segundos en este caso)
+        </script>
+    </body>
 
     <!-- NAVBAR -->
 
@@ -159,6 +176,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    
 </body>
 </html>
