@@ -1112,7 +1112,7 @@ img.gg {
         }
 
         .mancuerna-img {
-            width: 100px; /* Ajusta el ancho según tus necesidades */
+            width: 200px; /* Ajusta el ancho según tus necesidades */
             height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
             /* Otros estilos que desees aplicar */
             animation: logoAnimation 1.5s ease-in-out infinite alternate;
@@ -1122,10 +1122,7 @@ img.gg {
             0% {
                 transform: scale(1);
             }
-            50% {
-                transform: scale(1.2);
-            }
             100% {
-                transform: scale(2.1);
+                transform: scale(2.0);
             }
         }
