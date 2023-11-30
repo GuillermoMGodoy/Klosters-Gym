@@ -10,6 +10,26 @@
     <title>Powerlifting | Kloster´s Gym </title>
 </head>
 <body>
+
+    <body>
+        <body class="loading">
+            <div class="preloader-wrapper">
+                <div class="preloader">
+                    <!-- Reemplaza la mancuerna con una imagen -->
+                    <img src="../img/Logo Blanco.png" alt="Logo" class="mancuerna-img">
+                </div>
+            </div>
+            <!-- ... Otro contenido ... -->
+        
+            <script>
+                // Simula un tiempo de carga (puedes quitar esto en producción)
+                setTimeout(function() {
+                    document.body.classList.remove('loading');
+                    document.querySelector('.preloader-wrapper').style.display = 'none';
+                }, 3000); // Tiempo en milisegundos (3 segundos en este caso)
+            </script>
+        </body>
+
     <header>
         
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">

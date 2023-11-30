@@ -70,6 +70,9 @@ a {
 
 
 .Titulo {
+    border-radius: 20px;
+    background: cover;
+    background-color: darkgoldenrod;
     text-align: center;
     font-family: 'Arial', sans-serif;
     font-size: 2em;
