@@ -478,7 +478,7 @@ footer .box__copyright hr {
     background-image: url('./img/qqss.png'); /* Cambiar 'ruta-de-la-imagen.jpg' por la ruta de tu imagen */
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -492,6 +492,8 @@ footer .box__copyright hr {
     height: 100%;
 }
 .title {
+    border-radius: 10px;
+    background-color: #111;
     color: white;
     font-size: 48px;
     text-align: center;
@@ -500,6 +502,8 @@ footer .box__copyright hr {
     color: #ff0000; /* Color rojo */
 }
 .subtitle {
+    border-radius: 10px;
+    background-color: #111;
     color: white;
     font-size: 45px;
     text-align: center;
