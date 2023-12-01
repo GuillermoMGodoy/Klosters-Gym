@@ -270,5 +270,3 @@ function showContent(category) {
     // Muestra el elemento con el ID correspondiente a la categoría seleccionada
     document.getElementById(category).style.display = 'block';
 }
-
-

@@ -1128,3 +1128,19 @@ img.gg {
                 transform: scale(2.0);
             }
         }
+
+        /*JUEGO*/
+        #juego-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .juego-boton {
+            background-color: #4CAF50; /* Color de fondo verde, puedes personalizarlo */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
