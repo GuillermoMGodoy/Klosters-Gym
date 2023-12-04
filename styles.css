@@ -966,21 +966,86 @@ video {
 
 /* SECCION EJERCIOS */
 
+
 .button-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    row-gap: 5vh;
+    height: 50vh;
+    background-image: url("./img/CuerpoCompletoColores.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:contain
+    
 }
 
-.category-button {
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-    background-color: #3498db;
-    color: white;
+
+.category-button4 {
+    height: 5vh;
+    background-color: #0097B2;
+    color: black;
+    font-weight: bold;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    margin: 5px;
+    font-size: 20px;
+    margin: 20px;
+    
+}
+.category-button2 {
+    height: 5vh;
+    background-color: #FF6A6A;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    
+}
+.category-button3 {
+    height: 5vh;
+    background-color: #D1BF71;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    
+}
+.category-button1 {
+    height: 5vh;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    
+}
+.category-button5 {
+    height: 5vh;
+    background-color: #53D195;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    
+}
+.category-button6 {
+    height: 5vh;
+    background-color: #FFA3BE;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    
 }
 
 .content-container {
@@ -991,7 +1056,6 @@ video {
 
 .category-content img {
     max-width: 100%;
-    height: auto;
     margin-bottom: 10px;
 }
 
@@ -1057,6 +1121,27 @@ h2 {
 @media (max-width: 767px) {
     .carousell {
         animation: scroll 80s linear infinite; /* Velocidad en dispositivos móviles */
+    }
+}
+
+@media (max-height: 734px) {
+    .category-button2{
+        height: 7vh;
+    }
+    .category-button3{
+        height: 7vh;
+    }
+    .category-button4{
+        height: 7vh;
+    }
+    .category-button5{
+        height: 7vh;
+    }
+    .category-button6{
+        height: 7vh;
+    }
+    .category-button1{
+        height: 7vh;
     }
 }
 /* Estilo CSS para achicar la imagen */
