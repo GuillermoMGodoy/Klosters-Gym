@@ -1063,42 +1063,65 @@ video {
 h2 {
     margin-top: 10px;
 }
-.carousel-container {
-    overflow: hidden;
-}
+
 
 .carousell {
-    display: flex;
+    
     overflow: hidden;
-    width: 4500px; /* Ancho del carrusel en escritorio */
-    white-space: nowrap;
-    animation: scroll 18s linear infinite; /* Velocidad en escritorio */
-    position: relative;
+    height: auto;
+    width: 99vw;
+    margin: auto; /* Ancho del carrusel en escritorio */
+    
 }
+
+.carousell-track {
+    
+    display:flex;
+    height: 60vh;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14); /* Ancho del carrusel en escritorio */
+    
+}
+
+
 .medal {
-    flex: 0 0 300px;
+    
+    width: 100px;
+    margin: 100px;
+    align-items: center;
+    justify-items: center;
+    /* Permite que el contenido se ajuste automáticamente */
+    }
+
+.medal p {
     text-align: center;
-    padding: 20px;
-    margin-right: 20px;
-    white-space: normal; /* Permite que el contenido se ajuste automáticamente */
-}
+    width: 200px;
+    
+    /* Permite que el contenido se ajuste automáticamente */
+    }
+
+.medal img{
+    height: 20vh;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 3vw;
+
+    }
 
 /* Resto de tu CSS aquí */
 
-
-.medal img {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    display: block;
-}
-
 @keyframes scroll {
     0% {
+
+        -webkit-animation: translateX(0);
         transform: translateX(0); /* Comienza desde 0 para evitar espacio vacío al inicio */
     }
     100% {
-        transform: translateX(-70%); /* Termina en -70% para evitar espacio vacío al final */
+
+        -webkit-animation: translateY(calc(-200px *14));
+        transform: translateX(calc(-200px *14)); /* Termina en -70% para evitar espacio vacío al final */
     }
 }
 .saladetrofeos {
