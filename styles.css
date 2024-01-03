@@ -1069,7 +1069,7 @@ h2 {
     
     overflow: hidden;
     height: auto;
-    width: 99vw;
+    width: 100vw;
     margin: auto; /* Ancho del carrusel en escritorio */
     
 }
@@ -1077,7 +1077,6 @@ h2 {
 .carousell-track {
     
     display:flex;
-    height: 60vh;
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
     width: calc(200px * 14); /* Ancho del carrusel en escritorio */
@@ -1087,28 +1086,22 @@ h2 {
 
 .medal {
     
-    width: 100px;
-    margin: 100px;
-    align-items: center;
-    justify-items: center;
+    width: 8rem;
+    margin-right: 15rem;
+    margin-top: 3rem;
     /* Permite que el contenido se ajuste automáticamente */
     }
 
 .medal p {
-    text-align: center;
+    
     width: 200px;
     
     /* Permite que el contenido se ajuste automáticamente */
     }
-
 .medal img{
-    height: 20vh;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    margin-left: 3vw;
-
-    }
+    height: 12rem;
+    margin-left: 2rem;
+}
 
 /* Resto de tu CSS aquí */
 
@@ -1141,11 +1134,7 @@ h2 {
     }
 }
 /* Velocidad de desplazamiento en dispositivos móviles */
-@media (max-width: 767px) {
-    .carousell {
-        animation: scroll 80s linear infinite; /* Velocidad en dispositivos móviles */
-    }
-}
+
 
 @media (max-height: 734px) {
     .category-button2{
