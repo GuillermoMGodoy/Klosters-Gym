@@ -1,3 +1,4 @@
+
 const productos = document.querySelectorAll('.agregar');
 const listaProductos = document.getElementById('lista-productos');
 const total = document.getElementById('total');
@@ -270,3 +271,4 @@ function showContent(category) {
     // Muestra el elemento con el ID correspondiente a la categoría seleccionada
     document.getElementById(category).style.display = 'block';
 }
+
