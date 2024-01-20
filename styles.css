@@ -884,46 +884,44 @@ h2.ubicacion{
 
 /* Estilos para la sección de cómo entrenamos */
 #how-we-train {
-    display: flex;
+    
     color: white;
     align-items: center;
-    margin: 2rem;
+    
 }
 
 .entrenamiento-bb{
-    margin: 1.5rem;
+    margin: 1rem; 
+    margin-left: 1rem;
     text-align: justify;
     font-weight: 900;
     font-style: italic;
 }
 
 .text-bb{
-    margin: 2rem;
+    margin-left: 4rem;
+    margin: 1em;
     text-align: justify;
    
 }
 .text-pl{
-    margin: 2rem;
+    margin: 1rem;
     text-align: justify;
-    margin-top: -0.5rem;
-    margin-bottom: -0.5rem;
 }
 
 .text-pl-def{
-    margin-left: 2rem;
-    margin-top: 2rem;
-    width: 100%;
+    margin: 1rem;
+    
     text-align: justify;
     
 }
 
 .entrenamiento-bb-def{
-    margin: 1.5rem;
-    text-align: end;
+    margin:1rem;
+    text-align: justify;
     font-weight: 900;
     font-style: italic;
 }
-
 
 
 
