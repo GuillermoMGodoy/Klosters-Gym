@@ -32,6 +32,8 @@ option{
 
 }
 
+
+
 input{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
@@ -882,11 +884,35 @@ h2.ubicacion{
 
 /* Estilos para la sección de cómo entrenamos */
 #how-we-train {
+    display: flex;
     color: white;
-    text-align: center;
+    
     padding: 50px 0;
     background: linear-gradient(to right, grey, black);
+    
 }
+
+.entrenamiento-bb{
+    margin: 1.5rem;
+    text-align: justify;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.text-bb{
+    margin: 2rem;
+    text-align: justify;
+   
+}
+.text-pl{
+    margin: 2rem;
+    text-align: justify;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+
+
 
 /* Estilos para la sección de instructores */
 #instructors {
@@ -962,8 +988,8 @@ video {
 /*ALIMENTACIÓN*/
 #video-background {
     width: 100%;
-    height: 100%;
-
+    height: auto;
+    
   }
 /* Estilos generales para el contenedor */
 .container {
@@ -1225,10 +1251,10 @@ img.gg {
 
     /* Estilos para las secciones */
     section {
-        font-size: 2rem;
+        font-size: 0.5rem;
         text-align: center;
         background-color: goldenrod; /* Color de fondo para cada sección */
-        border-radius: 5px; /* Bordes redondeados para las secciones */
+        border-radius: 0px; /* Bordes redondeados para las secciones */
       }
   
       .macrostit {
