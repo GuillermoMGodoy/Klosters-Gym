@@ -216,8 +216,86 @@ a {
     margin-bottom: 10px; /* Agrega espacio entre el campo de entrada y el botón en pantallas pequeñas */
 }
 
+
+.botones-alimentacion{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-evenly;
+}
+.subtitulos{
+    font-style: oblique;
+    font: 800;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.macro-sup{
+    color: white;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.button-alim-1{
+    display:flex;
+    margin: 1rem;
+    justify-content: center;
+    
+    
+}
+.button-alim-2{
+
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    
+}
+
+.boton-al{
+    padding: 0;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: goldenrod;
+    width: 15vw;
+    height:10vh;
+    font-weight: 500;
+}
+
+@media (max-width: 643px) {
+    /* Aplicar estilos específicos para pantallas pequeñas */
+    .boton-al {
+        font-size: small;
+    }
+}
+
+@media (max-width: 643px) {
+    /* Aplicar estilos específicos para pantallas pequeñas */
+    .boton-al {
+        
+        height: 7vh;
+        width: 20vw;
+        margin: 0.2rem;
+        font-weight: 500;
+    }
+}
+@media (max-width: 395px) {
+    /* Aplicar estilos específicos para pantallas pequeñas */
+    .boton-al {
+        width: 23vw;
+        font-weight: 500;
+    }
+}
+
+.titulo-botones{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    margin: 1rem;
+}
 /* Estilo para el botón */
 button {
+    margin: 0.5rem;
     padding: 10px 20px;
     color: black;
     border: none;
