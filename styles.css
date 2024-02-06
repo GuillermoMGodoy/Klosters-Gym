@@ -1346,10 +1346,41 @@ img.gg {
         border-radius: 0px; /* Bordes redondeados para las secciones */
       }
   
-      .macrostit {
+    #macrostit {
         background-color: wheat;
         font-size: 30px; /* Tamaño de fuente para títulos principales */
       }
+
+    #macrostit2 {
+        background-color: wheat;
+        font-size: 30px; /* Tamaño de fuente para títulos principales */
+      }
+
+    #macrostit3 {
+        background-color: wheat;
+        font-size: 30px; /* Tamaño de fuente para títulos principales */
+      }
+
+    #macrostit4 {
+        background-color: wheat;
+        font-size: 30px; /* Tamaño de fuente para títulos principales */
+      }
+
+    #macrostit5 {
+        background-color: wheat;
+        font-size: 30px; /* Tamaño de fuente para títulos principales */
+      }
+      
+    #macrostit6 {
+        background-color: wheat;
+        font-size: 30px; /* Tamaño de fuente para títulos principales */
+      }
+      
+    #macrostit7 {
+        background-color: wheat;
+        font-size: 30px; /* Tamaño de fuente para títulos principales */
+      }
+    
   
   
       .imagen {
