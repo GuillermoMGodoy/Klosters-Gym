@@ -1241,6 +1241,12 @@ h2 {
     color: white;
 }
 
+@media only screen and (max-width: 768px) {
+    .category-content img {
+        max-width: 45%; /* Cambiar el tamaño máximo de las imágenes para dispositivos móviles */
+    }
+}
+
 
 .carousell {
     
